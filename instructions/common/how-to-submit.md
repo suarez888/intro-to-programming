@@ -12,7 +12,7 @@
 ![Submit Assignment: Step 2](../assets/submit-assignment/step-2-squibbyV2.png)
 
 ## Step 3: Be sure you complete all required fields (required fields have a red asterisk after the label)
-**NOTE:** The Questions field will be shared with your reviewer, so they may address your questions when reviewing your work.  However, if you wish to have a **faster** answer to your questions, be sure you are asking them during your mentor session(s) or are posting them in the #asteroid-discussion channel in Slack.
+**NOTE:** The Questions field will be shared with your reviewer, so they may address your questions when reviewing your work.  However, if you wish to have a **faster** answer to your questions, be sure you are asking them during your mentor session(s) or are posting them in the #bestla-discussion channel in Slack.
 
 ![Submit Assignment: Step 3](../assets/submit-assignment/step-3-squibbyV2.png)
 
