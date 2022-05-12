@@ -2,7 +2,7 @@
 
 # How to: Submit an Assignment
 
-## Step 1: Open a browser window/tab and navigate to the Squibby 2.0 - Assignment Submission Form (http://tiny.cc/asteroid-assignment-form)
+## Step 1: Open a browser window/tab and navigate to the Squibby 2.0 - Assignment Submission Form (http://tiny.cc/ctd-bestla-assignment)
 
 ![Submit Assignment: Step 1](../assets/submit-assignment/step-1-squibbyV2.png)
 
