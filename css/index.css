@@ -1,0 +1,66 @@
+body {
+   background-color: #FBF2C4; 
+   color: #008585;
+   margin: 40px, 100, 120px, 80px;
+   padding: 50px;
+}
+head {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+h1 {
+    color:#C7522A;
+}
+h2 {
+    color: #C7522A;
+    font-size: 24px;
+    font-weight: 800;
+}
+#experience {
+    system: fixed;
+    border-block-style: groove;
+}
+#mySkills {
+    list-style: custom-ordered;
+    border-block-style: groove;
+}
+[for=name] {
+    font-size: 15px;
+    color:#C7522A;
+    padding: 0.25em;
+    border-style: none;
+}
+[for=email] {
+    font-size: 15px;
+    color:#C7522A;
+    padding: 0.25em;
+    border-style: none;
+}
+[for=message] {
+    font-size: 15px;
+    color:#C7522A;
+    padding: 0.25em;
+    border-style: none;
+}
+button {
+    background-color: #008585;
+    border-style: none;
+    color: white;
+    padding: 10px 15px;
+    font-family: lucida;
+}
+[type=text] {
+    color: #fff;
+}
+#messages ul {
+    color:#008585;
+    border-style: solid;
+}
+footer {
+    background-color: #E5C185;
+    padding: 20px;
+}
+@media all {
+        body {
+            background-color: #FBF2C4;
+        }  
+}
