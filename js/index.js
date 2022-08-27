@@ -3,7 +3,7 @@ let today = new Date();
 let thisYear = today.getFullYear();
 let footer = document.querySelector('.footer');
 let copyright = document.createElement('p')
-copyright.innerHTML = "Emmely " + thisYear;
+copyright.innerHTML = "Emmely Suarez " + thisYear;
 footer.appendChild(copyright);
 
 
@@ -20,7 +20,7 @@ for (let i = 0; i < skills.length; i++ ){
 const messageForm = document.querySelector('form[name=leave_message]');
 messageForm.addEventListener('submit', (event) => {
     event.preventDefault();
-    var name = event.target.name.value;
+    var name = event.target.name.value; 
     var email = event.target.email.value;
     var message = event.target.message.value;
     console.log(name);
