@@ -1,3 +1,15 @@
+.navbar {
+    display: grid;
+    background-color: #C7522A;
+    justify-content: space-between;
+    padding-left: 41%;
+    padding: 3%;
+    position: sticky;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    list-style-type: none;
+    text-decoration: none;
+}
 body {
    background-color: #FBF2C4; 
    color: #008585;
@@ -15,27 +27,17 @@ h2 {
     font-size: 24px;
     font-weight: 800;
 }
-#experience {
-    system: fixed;
-    border-block-style: groove;
+#experience { 
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 60px 50px 32px;
+    border-block-style: groove
 }
 #mySkills {
-    list-style: custom-ordered;
+    list-style: square;
     border-block-style: groove;
 }
-[for=name] {
-    font-size: 15px;
-    color:#C7522A;
-    padding: 0.25em;
-    border-style: none;
-}
-[for=email] {
-    font-size: 15px;
-    color:#C7522A;
-    padding: 0.25em;
-    border-style: none;
-}
-[for=message] {
+.formInputLabel {
     font-size: 15px;
     color:#C7522A;
     padding: 0.25em;
@@ -45,11 +47,11 @@ button {
     background-color: #008585;
     border-style: none;
     color: white;
-    padding: 10px 15px;
+    padding: 10px;
     font-family: lucida;
 }
 [type=text] {
-    color: #fff;
+    color: #008585;
 }
 #messages ul {
     color:#008585;
@@ -59,8 +61,53 @@ footer {
     background-color: #E5C185;
     padding: 20px;
 }
-@media all {
-        body {
-            background-color: #FBF2C4;
-        }  
+#Message {
+    display: grid;
+    grid-template-columns: max-content;
+    grid-template-rows: max-content;
+}
+a {
+    display: grid;
+    color: #E5C185;
+    grid-template-rows: 100%;
+    grid-template-columns: 100%;
+}
+/*design for smartphones*/
+@media screen and (width: minmax( 320px, 480px)){
+    .navbar li {
+        display: grid;
+        background-color: #C7522A;
+        justify-content: space-between;
+        padding: relative;
+        padding-left: 20%;
+        position: sticky;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+    }
+}
+/*design for tablets*/
+@media screen and (width: minmax( 480px, 768px)){
+    .navbar li {
+        display: grid;
+        background-color: #C7522A;
+        justify-content: space-between;
+        padding: relative;
+        padding-left: 20%;
+        position: sticky;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+    }
+}
+/*design for desktop*/
+@media screen and (width: minmax( 768px, 1200px)){
+    .navbar li {
+        display: grid;
+        background-color: #C7522A;
+        justify-content: space-between;
+        padding-left: 20%;
+        padding: 20px;
+        position: sticky;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+    }
 }
