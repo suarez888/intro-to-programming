@@ -3,7 +3,7 @@ let today = new Date();
 let thisYear = today.getFullYear();
 let footer = document.querySelector('.footer');
 let copyright = document.createElement('p')
-copyright.innerHTML = "Emmely Suarez " + thisYear;
+copyright.innerHTML =  "\u00a9 " +"Emmely Suarez " + thisYear;
 footer.appendChild(copyright);
 
 
@@ -52,7 +52,8 @@ githubRequest.addEventListener("load" , function () {
     var projectList = projectSection.querySelector('ul');
     for (let i = 0; i < repositories.length; i++ ){
         var project = document.createElement('li');
-        project.innerText = repositories[i];
+        project.innerText = repositories[i].name;
         projectList.appendChild(project);
     };
 });
+
