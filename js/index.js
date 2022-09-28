@@ -3,7 +3,7 @@ let today = new Date();
 let thisYear = today.getFullYear();
 let footer = document.querySelector('.footer');
 let copyright = document.createElement('p')
-copyright.innerHTML =  "\u00a9 " +"Emmely Suarez " + thisYear;
+copyright.innerHTML =  "&copy; Emmely Suarez " + thisYear;
 footer.appendChild(copyright);
 
 
