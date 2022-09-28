@@ -3,7 +3,7 @@ let today = new Date();
 let thisYear = today.getFullYear();
 let footer = document.querySelector('.footer');
 let copyright = document.createElement('p')
-copyright.innerHTML = "Emmely Suarez " + thisYear;
+copyright.innerHTML =  "&copy; Emmely Suarez " + thisYear;
 footer.appendChild(copyright);
 
 
@@ -41,3 +41,19 @@ messageForm.addEventListener('submit', (event) => {
     messageList.appendChild(newMessage);
     messageForm.reset();
 });
+var githubRequest = new XMLHttpRequest();
+githubRequest.open('GET', 'https://api.github.com/users/suarez888/repos');
+githubRequest.send();
+githubRequest.addEventListener("load" , function () {
+    let repositories = JSON.parse(this.response);
+    console.log(repositories);
+
+    var projectSection = document.getElementById('projects');
+    var projectList = projectSection.querySelector('ul');
+    for (let i = 0; i < repositories.length; i++ ){
+        var project = document.createElement('li');
+        project.innerText = repositories[i].name;
+        projectList.appendChild(project);
+    };
+});
+
