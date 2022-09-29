@@ -23,17 +23,14 @@ messageForm.addEventListener('submit', (event) => {
     var name = event.target.name.value; 
     var email = event.target.email.value;
     var message = event.target.message.value;
-    console.log(name);
-    console.log(email);
-    console.log(message);
     var messageSection = document.querySelector('#messages');
     var messageList = messageSection.querySelector('ul');
     var newMessage = document.createElement('li');
         newMessage.innerHTML = `<a href="mailto:${email}">${name}:</a><span> ${message} </span>`;
     var removeButton = document.createElement('button');
-    removeButton.innerText = "remove";
-    removeButton.type = "button";
-    removeButton.addEventListener('click', (e) => {
+        removeButton.innerText = "remove";
+        removeButton.type = "button";
+        removeButton.addEventListener('click', (e) => {
         var entry = removeButton.parentNode;
         entry.parentElement.removeChild(entry);
     });
@@ -41,19 +38,16 @@ messageForm.addEventListener('submit', (event) => {
     messageList.appendChild(newMessage);
     messageForm.reset();
 });
-var githubRequest = new XMLHttpRequest();
-githubRequest.open('GET', 'https://api.github.com/users/suarez888/repos');
-githubRequest.send();
-githubRequest.addEventListener("load" , function () {
-    let repositories = JSON.parse(this.response);
-    console.log(repositories);
 
-    var projectSection = document.getElementById('projects');
-    var projectList = projectSection.querySelector('ul');
-    for (let i = 0; i < repositories.length; i++ ){
+fetch('https://api.github.com/users/suarez888/repos')
+.then((response) =>  response.json())
+  .then(data => { 
+        var projectSection = document.getElementById('projects');
+        var projectList = projectSection.querySelector('ul');
+    for (let i = 0; i < data.length; i++ ){
         var project = document.createElement('li');
-        project.innerText = repositories[i].name;
+        project.innerText = data[i].name;
         projectList.appendChild(project);
-    };
-});
+    }
+})
 
