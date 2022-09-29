@@ -3,7 +3,7 @@
     background-color: #C7522A;
     justify-content: space-between;
     padding-left: 41%;
-    padding: 3%;
+    padding: 1%;
     position: sticky;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
@@ -13,7 +13,6 @@
 body {
    background-color: #FBF2C4; 
    color: #008585;
-   margin: 40px, 100px, 120px, 80px;
    padding: 50px;
 }
 head {
@@ -31,11 +30,20 @@ h2 {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 60px 50px 32px;
-    border-block-style: groove
+}
+#experience p { 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.img {
+    width: 360px;
+    height: 450px;
+    display: grid;
+    float: right;
+    padding: 0 20px 20px 0;
 }
 #mySkills {
     list-style: square;
-    border-block-style: groove;
 }
 .formInputLabel {
     font-size: 15px;
@@ -83,6 +91,9 @@ a {
         position: sticky;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: auto;
+    }
+    .img {
+        width: minmax(720, 820);
     }
 }
 /*design for tablets*/

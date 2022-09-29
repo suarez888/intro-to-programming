@@ -23,17 +23,14 @@ messageForm.addEventListener('submit', (event) => {
     var name = event.target.name.value; 
     var email = event.target.email.value;
     var message = event.target.message.value;
-    console.log(name);
-    console.log(email);
-    console.log(message);
     var messageSection = document.querySelector('#messages');
     var messageList = messageSection.querySelector('ul');
     var newMessage = document.createElement('li');
         newMessage.innerHTML = `<a href="mailto:${email}">${name}:</a><span> ${message} </span>`;
     var removeButton = document.createElement('button');
-    removeButton.innerText = "remove";
-    removeButton.type = "button";
-    removeButton.addEventListener('click', (e) => {
+        removeButton.innerText = "remove";
+        removeButton.type = "button";
+        removeButton.addEventListener('click', (e) => {
         var entry = removeButton.parentNode;
         entry.parentElement.removeChild(entry);
     });
@@ -53,3 +50,4 @@ fetch('https://api.github.com/users/suarez888/repos')
         projectList.appendChild(project);
     }
 })
+
